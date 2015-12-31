@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.esiea.navaratnam_nirosan_ramrami_lamya.myapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/voyages"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity2"
+            android:label="@string/title_activity_2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LONDRES"
+            android:label="@string/title_activity_londres"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".lastminute"
+            android:label="@string/title_activity_lastminute"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".helpx"
+            android:label="@string/title_activity_helpx"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".internetpromo"
+            android:label="@string/title_activity_internetpromo"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".internethelpx"
+            android:label="@string/title_activity_internethelpx"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".internetlines"
+            android:label="@string/title_activity_internetlines"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <receiver android:name=".AirplaneReceiver">
+          <intent-filter>
+
+              <action android:name="android.intent.action.AIRPLANE_MODE"/>
+
+
+          </intent-filter>
+
+
+
+        </receiver>
+
+    </application>
+
+</manifest>

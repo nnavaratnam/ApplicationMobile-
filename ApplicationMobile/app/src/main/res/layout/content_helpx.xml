@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="org.esiea.navaratnam_nirosan_ramrami_lamya.myapp.helpx"
+    tools:showIn="@layout/activity_helpx">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:text="Qu'est-ce que c'est ?
+Le HelpX (Help Exchange) peut à première vue sembler identique au WWOOFing, mais c'est en réalité un réseau d'hôtes, également présents dans un grand nombre de pays, beaucoup plus varié. Il peut s'agir de fermes, organiques ou non, de ranchs, d'auberges, de lodges, de Bed and Breakfasts ou encore de voiliers !
+Les hôtes qui font partie de ce réseau s’engagent à accueillir des Helpers qui seront logés et/ou nourris en échange d’un travail bénévole.
+Vous pourrez obtenir ce type d'informations en contactant votre hôte au préalable et pour en savoir plus sur les différentes options, consultez le site du HelpX."
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:src="@mipmap/helpx"
+        android:layout_marginBottom="40dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="helpx.net"
+        android:id="@+id/button2"
+        android:onClick="helpx"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp" />
+
+</RelativeLayout>
